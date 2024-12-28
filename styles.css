@@ -1,0 +1,113 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for the App */
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons Layout */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Box for Place Value and Result Display with Divider */
+.box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+}
+
+.box:not(:last-child) {
+    border-bottom: 4px solid #333; /* Bold dividing line between sections */
+}
+
+/* T-Chart Layout with Bold Vertical and Horizontal Dividers */
+.t-chart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 4px solid #333; /* Bold horizontal divider between headers and dots */
+    padding-bottom: 10px; /* Space between header row and dots */
+}
+
+.t-chart .header {
+    font-weight: bold;
+    text-align: center;
+    width: 100px; /* Fixed width for alignment */
+    border-right: 4px solid #333; /* Bold vertical divider between columns */
+    padding-bottom: 5px;
+}
+
+.t-chart .header:last-child {
+    border-right: none; /* Remove border on the last header */
+}
+
+.dot-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Match width of header for alignment */
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 5px 0;
+    border-right: 4px solid #333; /* Bold vertical divider between dot columns */
+    box-sizing: border-box;
+}
+
+.dot-column:last-child {
+    border-right: none; /* Remove border on the last dot column */
+}
